@@ -1,0 +1,51 @@
+{
+  "name": "BotTranslation123",
+  "padlock": "sPbdYg/WSU7MixM2Ux1McA==!3zhD1Jhu8Q7rDWxTaCgb/N0luma1+CHtmHQsRhuBK+F7OA2yvqsxI4dVjmBv04Xo",
+  "version": "2.0",
+  "services": [
+    {
+      "tenantId": "5fbbce2a-c3e6-4b5e-a51f-222674fdb44d",
+      "subscriptionId": "5c42526c-8f26-4b3b-b63d-a7ce8821ac34",
+      "resourceGroup": "SpeechRG",
+      "serviceName": "BotTranslation123",
+      "type": "abs",
+      "name": "BotTranslation123",
+      "id": "1"
+    },
+    {
+      "connectionString": "JKNWLWHaM0uf2vgqUHmINA==!NqldG5FGd3EMcL8oJH+kaOnXRYXL5i2NPdnsR5AvaJSmDScg5lDeXrYSx98RyRSq6yeJk8pycn6N5lLlWhgRTUbwkpRMqYc2Zl3Ax7MhaCnH8Ns20Xj0fV7ShMHgCV4j7FPIkanCGkcqIpID+WdbmFfF5ybWur5D95XzKznDoiQIUQ4HsMzot92U9UnQZ97SHe67qx/Aobi8y53/WYug1ivw9aLguv12UlMZ0oFLz14=",
+      "tenantId": "5fbbce2a-c3e6-4b5e-a51f-222674fdb44d",
+      "subscriptionId": "5c42526c-8f26-4b3b-b63d-a7ce8821ac34",
+      "resourceGroup": "SpeechRG",
+      "serviceName": "bottranslation123b11a",
+      "type": "blob",
+      "id": "2"
+    },
+    {
+      "appId": "",
+      "appPassword": "",
+      "endpoint": "http://localhost:3978/api/messages",
+      "type": "endpoint",
+      "name": "development",
+      "id": "3"
+    },
+    {
+      "appId": "5fe39d68-a7e8-4554-a42f-9bded6baf28e",
+      "appPassword": "ZT7PbzuHaiUbLacUUMetRQ==!zsTTv9YvLe9u3lwE3upiJv3S/BTQyJzFnByYYqzK2kQ=",
+      "endpoint": "https://bottranslation123.azurewebsites.net/api/messages",
+      "type": "endpoint",
+      "name": "production",
+      "id": "4"
+    },
+    {
+      "appId": "65332712-8c79-41b5-86bb-841c663e210a",
+      "authoringKey": "54222a359c6042c58f4670e799188284",
+      "subscriptionKey": "54222a359c6042c58f4670e799188284",
+      "version": "0.1",
+      "region": "westus",
+      "type": "luis",
+      "name": "SpeechBotDemoV-a591",
+      "id": "5"
+    }
+  ]
+}

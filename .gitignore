@@ -1,0 +1,3 @@
+*.dll
+*.pdb
+/.vs/EchoBotWithCounter/v15/Server/sqlite3
