@@ -68,6 +68,7 @@ namespace Microsoft.BotBuilderSamples
                 {
                     throw new FileNotFoundException($"The .bot configuration file was not found. botFilePath: {botFilePath}");
                 }
+
                 // Loads .bot configuration file and adds a singleton that your Bot can access through dependency injection.
                 BotConfiguration botConfig = null;
                 try

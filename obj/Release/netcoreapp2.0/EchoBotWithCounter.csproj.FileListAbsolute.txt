@@ -10,3 +10,4 @@ C:\Users\Veronika\source\repos\BotTranslate\obj\Release\netcoreapp2.0\EchoBotWit
 C:\Users\Veronika\source\repos\BotTranslate\obj\Release\netcoreapp2.0\EchoBotWithCounter.AssemblyInfo.cs
 C:\Users\Veronika\source\repos\BotTranslate\obj\Release\netcoreapp2.0\EchoBotWithCounter.dll
 C:\Users\Veronika\source\repos\BotTranslate\obj\Release\netcoreapp2.0\EchoBotWithCounter.pdb
+C:\Users\Veronika\source\repos\BotTranslate\bin\Release\netcoreapp2.0\bot.bot

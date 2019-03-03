@@ -64,7 +64,7 @@ namespace Microsoft.BotBuilderSamples
         /// There are no dialogs used, since it's "single turn" processing, meaning a single
         /// request and response.
         /// </summary>
-        /// <param name="turnContext">A <see cref="ITurnContext"/> containing all the data needed
+        /// <param name="context">A <see cref="ITurnContext"/> containing all the data needed
         /// for processing this conversation turn. </param>
         /// <param name="cancellationToken">(Optional) A <see cref="CancellationToken"/> that can be used by other objects
         /// or threads to receive notice of cancellation.</param>
@@ -80,14 +80,37 @@ namespace Microsoft.BotBuilderSamples
             {
                 await context.SendActivityAsync($"==>LUIS Top Scoring Intent: `'{topIntent.Value.intent}'`, Score: {topIntent.Value.score}\n");
             }
+            else if (context.Activity.Type == ActivityTypes.ConversationUpdate)
+            {
+                // Send a welcome message to the user and tell them what actions they may perform to use this bot
+                await SendWelcomeMessageAsync(context, cancellationToken);
+            }
             else
             {
                 var msg = "No LUIS intents were found.<br>" +
-                        "This sample is about identifying two user intents:<br>" +
-                        "`'Calendar.Add'`<br>" +
-                        "`'Calendar.Find'`<br>" +
-                        "Try typing `'Add Event'` or `'Show me tomorrow'`.<br>";
+                        "This sample is about translating words and phrases";
                 await context.SendActivityAsync(msg);
+            }
+        }
+
+        /// <summary>
+        /// On a conversation update activity sent to the bot, the bot will
+        /// send a message to the any new user(s) that were added.
+        /// </summary>
+        /// <param name="turnContext">Provides the <see cref="ITurnContext"/> for the turn of the bot.</param>
+        /// <param name="cancellationToken" >(Optional) A <see cref="CancellationToken"/> that can be used by other objects
+        /// or threads to receive notice of cancellation.</param>
+        /// <returns>>A <see cref="Task"/> representing the operation result of the Turn operation.</returns>
+        private static async Task SendWelcomeMessageAsync(ITurnContext turnContext, CancellationToken cancellationToken)
+        {
+            foreach (var member in turnContext.Activity.MembersAdded)
+            {
+                if (member.Id != turnContext.Activity.Recipient.Id)
+                {
+                    await turnContext.SendActivityAsync(
+                        $"Welcome to LuisBot {member.Name}. {WelcomeText}",
+                        cancellationToken: cancellationToken);
+                }
             }
         }
     }

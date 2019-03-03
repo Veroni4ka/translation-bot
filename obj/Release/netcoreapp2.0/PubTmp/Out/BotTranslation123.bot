@@ -22,8 +22,8 @@
       "id": "2"
     },
     {
-      "appId": "",
-      "appPassword": "",
+      "appId": "1234567",
+      "appPassword": "1234567",
       "endpoint": "http://localhost:3978/api/messages",
       "type": "endpoint",
       "name": "development",

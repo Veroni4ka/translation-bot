@@ -1,0 +1,18 @@
+{
+    "name": "bot",
+    "description": "",
+    "services": [
+        {
+            "type": "endpoint",
+            "appId": "",
+            "appPassword": "",
+            "endpoint": "http://localhost:3968/api/messages",
+            "id": "36352c80-3d60-11e9-8b47-55b76c957f76",
+            "name": "http://localhost:3968/api/messages"
+        }
+    ],
+    "padlock": "",
+    "version": "2.0",
+    "overrides": null,
+    "path": "C:\\Users\\Veronika\\source\\repos\\BotTranslate\\bot.bot"
+}
